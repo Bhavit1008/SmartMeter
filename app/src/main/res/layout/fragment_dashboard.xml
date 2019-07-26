@@ -7,7 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -28,7 +29,8 @@
                 android:layout_marginBottom="5dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="6dp"
-                app:cardElevation="7dp">
+                app:cardElevation="7dp"
+                android:id="@+id/frequency_card">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,7 +69,7 @@
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@android:color/black"
-                            android:textSize="18dp" />
+                            android:textSize="14dp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -81,7 +83,176 @@
                                 android:text="Value"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@android:color/black"
+                                android:textSize="12dp"
+                                android:id="@+id/frequency"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Hz"
+                                android:textColor="@android:color/black"
                                 android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="2dp"
+                            app:srcCompat="@drawable/smicon" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#505050"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="Record Time"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="value"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp"
+                                android:id="@+id/recordtime"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="unitt"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="2dp"
+                            app:srcCompat="@drawable/smicon" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#505050"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="AvgVoltage"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Value"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp"
+                                android:id="@+id/averagevoltage"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -146,11 +317,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="AvgPowerFactor"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@android:color/black"
-                            android:textSize="18dp" />
+                            android:textSize="14dp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -164,257 +335,8 @@
                                 android:text="Value"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Unit"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_marginBottom="2dp"
-                            app:srcCompat="@drawable/smicon" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:background="#505050"></View>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@android:color/black"
-                            android:textSize="18dp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="left"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Value"
-                                android:layout_marginRight="10dp"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Unit"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_marginBottom="2dp"
-                            app:srcCompat="@drawable/smicon" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:background="#505050"></View>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@android:color/black"
-                            android:textSize="18dp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="left"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Value"
-                                android:layout_marginRight="10dp"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Unit"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="6dp"
-                app:cardElevation="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_marginBottom="2dp"
-                            app:srcCompat="@drawable/smicon" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:background="#505050"></View>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@android:color/black"
-                            android:textSize="18dp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="left"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:text="Value"
-                                android:layout_marginRight="10dp"
-                                android:textColor="@android:color/black"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"
+                                android:id="@+id/Avg_power_factor"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -480,11 +402,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="3PhaseActivePower"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@android:color/black"
-                            android:textSize="18dp" />
+                            android:textSize="10dp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -498,7 +420,93 @@
                                 android:text="Value"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@android:color/black"
+                                android:textSize="12dp"
+                                android:id="@+id/three_Phase_Active_Power"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Unit"
+                                android:textColor="@android:color/black"
                                 android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="2dp"
+                            app:srcCompat="@drawable/smicon" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#505050"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="ActiveTotalImport"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Value"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp"
+                                android:id="@+id/Active_Total_Import"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -588,9 +596,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="RPhaseToNeutralVoltage"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -601,7 +609,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/R_Phase_to_Neutral_Voltage"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -677,9 +686,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="YPhaseToNeutralVoltage"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -690,7 +699,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/Y_Phase_to_Neutral_Voltage"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -766,9 +776,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="BPhaseToNeutralVoltage"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -779,7 +789,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/B_Phase_to_Neutral_Voltage"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -855,9 +866,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="RPhaseLineCurrent"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -868,7 +879,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/R_Phase_Line_current"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -944,9 +956,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="YPhaseLineCurrent"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -957,7 +969,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/Y_Phase_Line_current"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1033,9 +1046,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="BPhaseLineCurrent"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1046,7 +1059,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/B_Phase_Line_current"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1122,9 +1136,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="NeutralLineCurrent"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1135,7 +1149,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/Neutral_Line_current"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1211,9 +1226,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="RPhaseActivePower"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1224,7 +1239,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/R_Phase_Active_Power"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1300,9 +1316,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="BPhaseActivePower"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1313,7 +1329,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/B_Phase_Active_Power"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1389,9 +1406,9 @@
                             android:layout_marginLeft="20dp"
                             android:layout_toRightOf="@+id/idLinearLayout"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Frequency"
+                            android:text="YPhaseActivePower"
                             android:textColor="@android:color/black"
-                            android:textSize="25dp" />
+                            android:textSize="14dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1402,7 +1419,8 @@
                             android:text="Value"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:id="@+id/Y_Phase_Active_Power"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1431,5 +1449,4 @@
         </GridLayout>
 
     </LinearLayout>
-
 </ScrollView>
