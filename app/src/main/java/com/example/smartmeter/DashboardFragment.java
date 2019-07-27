@@ -36,7 +36,7 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
             averagevoltage,R_Phase_Active_Power,Y_Phase_Active_Power,B_Phase_Active_Power,
             R_Phase_Line_current,Y_Phase_Line_current,B_Phase_Line_current,R_Phase_to_Neutral_Voltag,
             Y_Phase_to_Neutral_Voltag,B_Phase_to_Neutral_Voltag,Neutral_Line_current,
-            Avg_Current,LoadStateValue;
+            Avg_Current,LoadStateValue,Avg_Voltage,Avg_PowerFactor;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -52,6 +52,8 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
         Avg_Current = (TextView) view.findViewById(R.id.currentValue);
         LoadStateLogo = (ImageView) view.findViewById(R.id.LoadStateLogo);
         LoadStateValue = (TextView) view.findViewById(R.id.Load_State_Value);
+        Avg_Voltage = (TextView) view.findViewById(R.id.VoltageValue);
+        Avg_PowerFactor = (TextView) view.findViewById(R.id.PowerFactorValue);
 
 
         //previous
@@ -136,6 +138,15 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                     LoadStateLogo.setImageResource(R.drawable.ic_red_circle);
                     LoadStateValue.setText("OFF");
                 }
+                //Setting Avg Voltage
+                double avgVoltage = (Double.parseDouble(rpynvoltage)+Double.parseDouble(yptnvoltage)+Double.parseDouble(bptnvoltage))/3;
+                String avgVoltageValue = Double.toString(avgVoltage);
+                Avg_Voltage.setText(avgVoltageValue.substring(0,6));
+
+                //Setting Avg Power Factor (!!!!!! issue in this because of YbpaPower)
+                double avgPowerFactor = (Double.parseDouble(rpapower)+Double.parseDouble(bpapower))/2;
+                String avgPowerFactorValue = Double.toString(avgPowerFactor);
+                Avg_PowerFactor.setText(avgPowerFactorValue.substring(0,4));
 
 
                 //Setting values to UI

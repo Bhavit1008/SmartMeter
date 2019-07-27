@@ -1052,12 +1052,14 @@ id LoadStateLogo
 id Load_State_Value
 id META
 id Neutral_Line_current
+id PowerFactorValue
 id R_Phase_Active_Power
 id R_Phase_Line_current
 id R_Phase_to_Neutral_Voltage
 id RecordTimeValue
 id SHIFT
 id SYM
+id VoltageValue
 id Y_Phase_Active_Power
 id Y_Phase_Line_current
 id Y_Phase_to_Neutral_Voltage
