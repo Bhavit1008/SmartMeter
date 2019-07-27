@@ -4,20 +4,176 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:id="@+id/LinearLayoutLoadState">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="6dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- Load state image -->
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:id="@+id/idLinearLayoutOfLoadState"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/LoadStateLogo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Rest of the product info and add/remove to/from cart symbols -->
+
+                    <LinearLayout
+                        android:id="@+id/idTopLayout11"
+                        android:layout_toRightOf="@+id/idLinearLayoutOfLoadState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/idTextFirst11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="Load State"
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp"
+                            android:id="@+id/Load_State_Value"/>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="6dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- Load state image -->
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:id="@+id/idLinearLayoutOfRecordTime"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/idDateTimeLogo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_recordtime_logo" />
+                    </LinearLayout>
+
+                    <!-- Rest of the product info and add/remove to/from cart symbols -->
+
+                    <LinearLayout
+                        android:id="@+id/idTopLayout111"
+                        android:layout_toRightOf="@+id/idLinearLayoutOfRecordTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/idTextFirst111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginLeft="1dp"
+                            android:text="Time "
+                            android:textColor="@android:color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:id="@+id/RecordTimeValue"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
 
         <GridLayout
+            android:layout_gravity="top"
+            android:layout_marginTop="0dp"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
-            android:padding="14dp"
+            android:paddingRight="14dp"
+            android:paddingLeft="14dp"
             android:rowCount="3">
+
+
 
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
@@ -80,10 +236,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:text="Value"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@android:color/black"
-                                android:textSize="12dp"
+                                android:textSize="15dp"
                                 android:id="@+id/frequency"/>
 
                             <TextView
@@ -149,7 +304,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center_vertical|center_horizontal"
-                            android:text="Record Time"
+                            android:text="Current"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@android:color/black"
@@ -164,18 +319,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:text="value"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@android:color/black"
                                 android:textSize="12dp"
-                                android:id="@+id/recordtime"/>
+                                android:id="@+id/currentValue"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:text="unitt"
+                                android:text="Amp"
                                 android:textColor="@android:color/black"
                                 android:textSize="12dp" />
 
@@ -356,7 +510,6 @@
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -441,7 +594,6 @@
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -1081,6 +1233,8 @@
                         android:layout_alignParentRight="true"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
+
             <android.support.v7.widget.CardView
 
                 android:layout_width="match_parent"

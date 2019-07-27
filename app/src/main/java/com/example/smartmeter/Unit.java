@@ -37,7 +37,12 @@ public class Unit {
     private String Active_Total_Import;
 
 
-    public Unit(String recordtime, String frequency, String r_Phase_to_Neutral_Voltage, String y_Phase_to_Neutral_Voltage, String b_Phase_to_Neutral_Voltage, String averagevoltage, String r_Phase_Line_current, String y_Phase_Line_current, String b_Phase_Line_current, String neutral_Line_current, String avg_power_factor, String r_Phase_Active_Power, String y_Phase_Active_power, String b_Phase_Active_Power, String three_Phase_Active_Power, String active_Total_Import) {
+    public Unit(String recordtime, String frequency, String r_Phase_to_Neutral_Voltage,
+                String y_Phase_to_Neutral_Voltage, String b_Phase_to_Neutral_Voltage, String averagevoltage,
+                String r_Phase_Line_current, String y_Phase_Line_current, String b_Phase_Line_current,
+                String neutral_Line_current, String avg_power_factor, String r_Phase_Active_Power,
+                String y_Phase_Active_power, String b_Phase_Active_Power, String three_Phase_Active_Power,
+                String active_Total_Import) {
         this.recordtime = recordtime;
         this.frequency = frequency;
         this.R_Phase_to_Neutral_Voltage = r_Phase_to_Neutral_Voltage;

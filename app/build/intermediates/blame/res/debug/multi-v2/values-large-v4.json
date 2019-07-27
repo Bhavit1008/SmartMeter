@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\SmartMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "D:\\SmartMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bhavit\\.gradle\\caches\\transforms-2\\files-2.1\\7b585a47a4fe9957626a57d76ca2210e\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bhavit\\.gradle\\caches\\transforms-2\\files-2.1\\28c094c7ef2949eb7695ab2b1bb52b33\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

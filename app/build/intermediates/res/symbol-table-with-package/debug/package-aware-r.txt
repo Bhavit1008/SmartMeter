@@ -1005,6 +1005,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_green_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
@@ -1016,6 +1017,8 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_recordtime_logo
+drawable ic_red_circle
 drawable ic_refresh_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1044,11 +1047,15 @@ id B_Phase_Line_current
 id B_Phase_to_Neutral_Voltage
 id CTRL
 id FUNCTION
+id LinearLayoutLoadState
+id LoadStateLogo
+id Load_State_Value
 id META
 id Neutral_Line_current
 id R_Phase_Active_Power
 id R_Phase_Line_current
 id R_Phase_to_Neutral_Voltage
+id RecordTimeValue
 id SHIFT
 id SYM
 id Y_Phase_Active_Power
@@ -1100,6 +1107,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id currentValue
 id custom
 id customPanel
 id decor_content_parent
@@ -1136,7 +1144,10 @@ id home
 id homeAsUp
 id icon
 id icon_group
+id idDateTimeLogo
 id idLinearLayout
+id idLinearLayoutOfLoadState
+id idLinearLayoutOfRecordTime
 id idProductImage1
 id idProductImage10
 id idProductImage2
@@ -1159,6 +1170,8 @@ id idRelativeLayoutOfImage8
 id idRelativeLayoutOfImage9
 id idTextFirst1
 id idTextFirst10
+id idTextFirst11
+id idTextFirst111
 id idTextFirst2
 id idTextFirst3
 id idTextFirst4
@@ -1170,6 +1183,8 @@ id idTextFirst9
 id idTopLayout
 id idTopLayout1
 id idTopLayout10
+id idTopLayout11
+id idTopLayout111
 id idTopLayout2
 id idTopLayout3
 id idTopLayout4
@@ -1224,7 +1239,6 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id recordtime
 id refresh
 id right
 id right_icon

@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
@@ -27,10 +28,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class DashboardFragment extends Fragment implements View.OnClickListener {
 
+    ImageView LoadStateLogo;
     CardView frequency_card;
-        Button settings;
+    Button settings;
     TextView frequency;
-    TextView recordtime,Active_Total_Import,three_Phase_Active_Power,Avg_power_factor,averagevoltage,R_Phase_Active_Power,Y_Phase_Active_Power,B_Phase_Active_Power,R_Phase_Line_current,Y_Phase_Line_current,B_Phase_Line_current,R_Phase_to_Neutral_Voltag,Y_Phase_to_Neutral_Voltag,B_Phase_to_Neutral_Voltag,Neutral_Line_current;
+    TextView recordtime,Active_Total_Import,three_Phase_Active_Power,Avg_power_factor,
+            averagevoltage,R_Phase_Active_Power,Y_Phase_Active_Power,B_Phase_Active_Power,
+            R_Phase_Line_current,Y_Phase_Line_current,B_Phase_Line_current,R_Phase_to_Neutral_Voltag,
+            Y_Phase_to_Neutral_Voltag,B_Phase_to_Neutral_Voltag,Neutral_Line_current,
+            Avg_Current,LoadStateValue;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,20 +48,30 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
         super.onViewCreated(view, savedInstanceState);
 
         getUnits();
+        //new
+        Avg_Current = (TextView) view.findViewById(R.id.currentValue);
+        LoadStateLogo = (ImageView) view.findViewById(R.id.LoadStateLogo);
+        LoadStateValue = (TextView) view.findViewById(R.id.Load_State_Value);
+
+
+        //previous
 
         R_Phase_Active_Power = view.findViewById(R.id.R_Phase_Active_Power);
         Y_Phase_Active_Power = view.findViewById(R.id.Y_Phase_Active_Power);
         B_Phase_Active_Power = view.findViewById(R.id.B_Phase_Active_Power);
         R_Phase_Line_current = view.findViewById(R.id.R_Phase_Line_current);
+
         Y_Phase_Line_current = view.findViewById(R.id.Y_Phase_Line_current);
         B_Phase_Line_current = view.findViewById(R.id.B_Phase_Line_current);
         R_Phase_to_Neutral_Voltag = view.findViewById(R.id.R_Phase_to_Neutral_Voltage);
         Y_Phase_to_Neutral_Voltag = view.findViewById(R.id.Y_Phase_to_Neutral_Voltage);
         B_Phase_to_Neutral_Voltag = view.findViewById(R.id.B_Phase_to_Neutral_Voltage);
         Neutral_Line_current = view.findViewById(R.id.Neutral_Line_current);
+
         frequency_card = (CardView) view.findViewById(R.id.frequency_card);
+
         frequency = (TextView) view.findViewById(R.id.frequency);
-        recordtime = (TextView) view.findViewById(R.id.recordtime);
+        recordtime = (TextView) view.findViewById(R.id.RecordTimeValue);
         averagevoltage = view.findViewById(R.id.averagevoltage);
         Avg_power_factor = view.findViewById(R.id.Avg_power_factor);
         three_Phase_Active_Power = view.findViewById(R.id.three_Phase_Active_Power);
@@ -66,7 +82,7 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 @Override
                 public void onClick(View v) {
                     getUnits();
-                    Toast.makeText(getContext(), "data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Refreshing", Toast.LENGTH_SHORT).show();
                 }
             });
     }
@@ -109,9 +125,24 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 yplcurrent = unitList.getY_Phase_Line_current();
                 bplcurrent = unitList.getB_Phase_Line_current();
 
+                //Setting load state
+                double avgCurrent =(Double.parseDouble(rplcurrent)+Double.parseDouble(yplcurrent)+Double.parseDouble(bplcurrent))/3;
+                String avgCurrentValue=Double.toString(avgCurrent);
+                if(avgCurrent>1){
+                    LoadStateLogo.setImageResource(R.drawable.ic_green_circle);
+                    LoadStateValue.setText("ON");
+                }
+                else{
+                    LoadStateLogo.setImageResource(R.drawable.ic_red_circle);
+                    LoadStateValue.setText("OFF");
+                }
+
+
+                //Setting values to UI
+                Avg_Current.setText(avgCurrentValue.substring(0,4));
+                frequency.setText(freq.substring(0,5));
 
                 Y_Phase_Active_Power.setText(ypapower);
-                frequency.setText(freq);
                 recordtime.setText(rt);
                 averagevoltage.setText(avgvol);
                 Avg_power_factor.setText(avgpowerfac);
