@@ -1008,6 +1008,7 @@ drawable design_snackbar_background
 drawable ic_green_circle
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_loadstate_logo_default
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_manage
@@ -1018,6 +1019,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_recordtime_logo
+drawable ic_recordtime_logo_default
 drawable ic_red_circle
 drawable ic_refresh_black_24dp
 drawable mtrl_snackbar_background
@@ -1048,7 +1050,6 @@ id B_Phase_to_Neutral_Voltage
 id CTRL
 id FUNCTION
 id LinearLayoutLoadState
-id LoadStateLogo
 id Load_State_Value
 id META
 id Neutral_Line_current
@@ -1150,6 +1151,7 @@ id idDateTimeLogo
 id idLinearLayout
 id idLinearLayoutOfLoadState
 id idLinearLayoutOfRecordTime
+id idLoadStateLogo
 id idProductImage1
 id idProductImage10
 id idProductImage2

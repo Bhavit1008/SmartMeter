@@ -50,10 +50,11 @@
                         android:padding="8dp">
 
                         <ImageView
-                            android:id="@+id/LoadStateLogo"
+                            android:id="@+id/idLoadStateLogo"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_loadstate_logo_default"/>
                     </LinearLayout>
 
                     <!-- Rest of the product info and add/remove to/from cart symbols -->
@@ -120,7 +121,7 @@
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:layout_gravity="center"
-                            app:srcCompat="@drawable/ic_recordtime_logo" />
+                            app:srcCompat="@drawable/ic_recordtime_logo_default"/>
                     </LinearLayout>
 
                     <!-- Rest of the product info and add/remove to/from cart symbols -->
@@ -150,6 +151,7 @@
                             android:layout_gravity="center_vertical|center_horizontal"
                             android:textColor="@android:color/black"
                             android:textSize="15dp"
+                            android:text=" "
                             android:id="@+id/RecordTimeValue"/>
 
 

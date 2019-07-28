@@ -28,7 +28,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class DashboardFragment extends Fragment implements View.OnClickListener {
 
-    ImageView LoadStateLogo;
+    ImageView LoadStateLogo,RecordTimeLogo;
     CardView frequency_card;
     Button settings;
     TextView frequency;
@@ -50,7 +50,8 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
         getUnits();
         //new
         Avg_Current = (TextView) view.findViewById(R.id.currentValue);
-        LoadStateLogo = (ImageView) view.findViewById(R.id.LoadStateLogo);
+        LoadStateLogo = (ImageView) view.findViewById(R.id.idLoadStateLogo);
+        RecordTimeLogo = (ImageView) view.findViewById(R.id.idDateTimeLogo);
         LoadStateValue = (TextView) view.findViewById(R.id.Load_State_Value);
         Avg_Voltage = (TextView) view.findViewById(R.id.VoltageValue);
         Avg_PowerFactor = (TextView) view.findViewById(R.id.PowerFactorValue);
@@ -127,7 +128,8 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 yplcurrent = unitList.getY_Phase_Line_current();
                 bplcurrent = unitList.getB_Phase_Line_current();
 
-                //Setting load state
+
+                //Setting Load State value and logo
                 double avgCurrent =(Double.parseDouble(rplcurrent)+Double.parseDouble(yplcurrent)+Double.parseDouble(bplcurrent))/3;
                 String avgCurrentValue=Double.toString(avgCurrent);
                 if(avgCurrent>1){
@@ -137,6 +139,11 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 else{
                     LoadStateLogo.setImageResource(R.drawable.ic_red_circle);
                     LoadStateValue.setText("OFF");
+                }
+                // Setting Record Time value and logo
+                recordtime.setText(rt);
+                if(rt!=" "){
+                    RecordTimeLogo.setImageResource(R.drawable.ic_recordtime_logo);
                 }
                 //Setting Avg Voltage
                 double avgVoltage = (Double.parseDouble(rpynvoltage)+Double.parseDouble(yptnvoltage)+Double.parseDouble(bptnvoltage))/3;
@@ -154,7 +161,6 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 frequency.setText(freq.substring(0,5));
 
                 Y_Phase_Active_Power.setText(ypapower);
-                recordtime.setText(rt);
                 averagevoltage.setText(avgvol);
                 Avg_power_factor.setText(avgpowerfac);
                 three_Phase_Active_Power.setText(three_p_active_power);

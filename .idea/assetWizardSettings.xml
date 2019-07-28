@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/device/ic_access_time_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_brightness_1_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,9 +33,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="6761c1" />
+                            <entry key="color" value="dcdee5" />
                             <entry key="opacityPercent" value="95" />
-                            <entry key="outputName" value="ic_recordtime_logo" />
+                            <entry key="outputName" value="ic_loadstate_logo_default" />
                             <entry key="sourceFile" value="C:\Users\Bhavit" />
                           </map>
                         </option>
