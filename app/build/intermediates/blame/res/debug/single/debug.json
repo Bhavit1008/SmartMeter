@@ -132,6 +132,10 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_voltage.jpg.flat",
+        "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\voltage.jpg"
+    },
+    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
         "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
@@ -296,12 +300,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\drawable\\mtrl_snackbar_background.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -358,6 +362,10 @@
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\dac8b9aad0b430cba5d22698d91d5795\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_frequency.jpg.flat",
+        "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\frequency.jpg"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -512,12 +520,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\dac8b9aad0b430cba5d22698d91d5795\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\dac8b9aad0b430cba5d22698d91d5795\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -1016,6 +1024,10 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\dac8b9aad0b430cba5d22698d91d5795\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_power.png.flat",
+        "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\power.png"
+    },
+    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -1460,6 +1472,10 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_current.png.flat",
+        "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\current.png"
+    },
+    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -1614,6 +1630,10 @@
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_time.png.flat",
+        "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\time.png"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
