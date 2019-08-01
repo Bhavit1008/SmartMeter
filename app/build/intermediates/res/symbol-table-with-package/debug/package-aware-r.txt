@@ -1012,11 +1012,15 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_loadstate_logo_default
 drawable ic_menu_camera
+drawable ic_menu_charts
+drawable ic_menu_dashboard
+drawable ic_menu_data_entry
 drawable ic_menu_gallery
 drawable ic_menu_manage
 drawable ic_menu_send
 drawable ic_menu_share
 drawable ic_menu_slideshow
+drawable ic_menu_tables
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1054,7 +1058,6 @@ id B_Phase_Line_current
 id B_Phase_to_Neutral_Voltage
 id CTRL
 id FUNCTION
-id LinearLayoutLoadState
 id Load_State_Value
 id META
 id Neutral_Line_current

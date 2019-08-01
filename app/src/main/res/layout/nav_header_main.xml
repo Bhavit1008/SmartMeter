@@ -15,16 +15,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         app:srcCompat="@drawable/smicon" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="2dp"
+        android:paddingTop="5dp"
         android:text="SMART METER"
-        android:textSize="30dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
@@ -32,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A project by TINJRIT"
-        android:textSize="20dp"/>
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>

@@ -5,23 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+<!-- Main Layout of Dashboard Fragment-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="5dp"
-        android:id="@+id/LinearLayoutLoadState">
+        android:layout_marginTop="5dp">
+
+        <!-- Load State and Record Time Layout-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="1dp"
-            android:paddingLeft="14dp"
-            android:paddingRight="14dp"
-            android:paddingBottom="10dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="0dp">
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginBottom="7dp"
+            android:layout_gravity="center">
 
             <android.support.v7.widget.CardView
 
@@ -164,17 +162,15 @@
 
         </LinearLayout>
 
+        <!-- Layout for 4 cards (Frequency, Current, Voltage, Power Factor)-->
         <GridLayout
-            android:layout_gravity="top"
-            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:alignmentMode="alignMargins"
+            android:rowCount="2"
             android:columnCount="2"
             android:columnOrderPreserved="false"
-            android:paddingRight="14dp"
-            android:paddingLeft="14dp"
-            android:rowCount="2">
+            android:layout_marginHorizontal="14dp">
 
             <android.support.v7.widget.CardView
                 android:layout_width="0dp"
@@ -510,6 +506,7 @@
             </android.support.v7.widget.CardView>
 
         </GridLayout>
+
         <!-- Main linear layout of table-->
         <LinearLayout
             android:layout_width="wrap_content"
@@ -615,7 +612,8 @@
                 </TableLayout>
 
             </LinearLayout>
-            <!-- Right linear layout of table-->
+
+            <!-- Right linear layout of table with horixontal scroll view-->
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -625,7 +623,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:background="#f1f1f1">
-
+                    <!--Rows of right side-->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -644,8 +642,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="2019-03-02 08:25:20"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -653,8 +650,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="2019-03-02 08:25:20"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -662,8 +658,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="2019-03-02 08:25:20"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -671,8 +666,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="2019-03-02 08:25:20"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -680,8 +674,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="2019-03-02 08:25:20"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -704,8 +697,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -713,8 +705,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -722,8 +713,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -731,8 +721,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -740,8 +729,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -764,8 +752,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -773,8 +760,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -782,8 +768,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -791,8 +776,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -800,8 +784,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -824,8 +807,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -833,8 +815,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -842,8 +823,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -851,8 +831,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -860,8 +839,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -884,8 +862,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -893,8 +870,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -902,8 +878,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -911,8 +886,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -920,8 +894,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -944,8 +917,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -953,8 +925,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -962,8 +933,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -971,8 +941,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                                 <TextView
                                     android:layout_width="180dp"
                                     android:layout_height="35dp"
@@ -980,8 +949,7 @@
                                     android:layout_margin="1dp"
                                     android:gravity="center"
                                     android:text="- -"
-                                    android:textSize="16dp"
-                                    android:textStyle="bold" />
+                                    android:textSize="16dp"/>
                             </TableRow>
 
                         </TableLayout>
@@ -989,11 +957,21 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
+
         </LinearLayout>
         <!--End of Table-->
 
 
 
+
+
+
+
+
+
+
+
+        <!-- Invisible things which are to be removed-->
         <GridLayout
             android:layout_gravity="top"
             android:layout_marginTop="0dp"
