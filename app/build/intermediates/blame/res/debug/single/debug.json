@@ -196,12 +196,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\color-v23\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_recordtime_logo_default.xml.flat",
         "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\ic_recordtime_logo_default.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
@@ -300,12 +300,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\drawable\\mtrl_snackbar_background.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -520,12 +520,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\dac8b9aad0b430cba5d22698d91d5795\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -1600,12 +1600,12 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_loadstate_logo_default.xml.flat",
         "source": "D:\\SmartMeter\\app\\src\\main\\res\\drawable\\ic_loadstate_logo_default.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\bc11635a3ba2b2d6273b81294c525f0f\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\color-v21_abc_btn_colored_borderless_text_material.xml.flat",
@@ -2056,11 +2056,11 @@
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
         "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\SmartMeter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\VIKAS SONI\\.gradle\\caches\\transforms-2\\files-2.1\\cef80caebf079e954cba75c8ec6ea8f4\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     }
 ]
